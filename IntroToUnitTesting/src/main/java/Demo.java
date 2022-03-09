@@ -29,7 +29,7 @@ public class Demo {
 
     }
     
-    public static boolean isTriangle(double a, double b, double c) {
+    public static boolean isTriangle(int a, int b, int c) {
         if ((a + b > c) &&
             (a + c > b) && // should be a + c > b
             (b + c > a)) {
