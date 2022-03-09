@@ -19,7 +19,15 @@ public class Demo {
         int side_3 = reader.nextInt();
         
         if (Triangle.isTriangle(side_1, side_2, side_3)) {
-            System.out.println("This is a triangle.");
+        	if (Triangle.isEquilateral(side_1, side_2, side_3)) {
+        		System.out.println("This is a triangle equilateral.");
+        	}
+        	else if (Triangle.isEscalane(side_1, side_2, side_3)) {
+        		System.out.println("This is a triangle scalane.");
+        	}
+        		else if (Triangle.isIsoceles(side_1, side_2, side_3)) {
+            		System.out.println("This is a triangle isosceles.");
+            	}
         }
         else {
             System.out.println("This is not a triangle.");

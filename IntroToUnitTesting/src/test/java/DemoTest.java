@@ -69,6 +69,79 @@ public class DemoTest {
 		public void orderTest6_isNotTriangle () {
 			assertFalse (Triangle.isTriangle(1,8,2));	
 		}
+		
+		//Test para probar que un triangulo es equilatero
+		
+		@Test
+		public void testEquilateral () {
+			assertTrue (Triangle.isEquilateral(1, 1, 1));
+		}
+		
+		//Test para probar que un triangulo es escaleno
+		
+		
+		@Test
+		public void testScalane1 () {
+			assertTrue (Triangle.isEscalane(11, 5, 15));
+		}
+		
+		@Test
+		public void testScalane2 () {
+			assertTrue (Triangle.isEscalane(11, 15,5));
+		}
+		@Test
+		public void testScalane3 () {
+			assertTrue (Triangle.isEscalane(5, 15,11));
+		}
+		@Test
+		public void testScalane4 () {
+			assertTrue (Triangle.isEscalane(5, 11, 15));
+		}
+		@Test
+		public void testScalane5 () {
+			assertTrue (Triangle.isEscalane(15, 5, 11));
+		}
+		@Test
+		public void testScalane6 () {
+			assertTrue (Triangle.isEscalane(15, 11, 5));
+		}
+		
+		//Test para probar que un triangulo es isosceles
+		
+		
+		@Test
+		public void testIsosceles1 () {
+			assertTrue (Triangle.isIsoceles(3, 3, 1));
+		}
+				
+		@Test
+		public void testIsosceles2 () {
+			assertTrue (Triangle.isIsoceles(3, 1,3));
+		}
+		
+		@Test
+		public void testIsosceles3 () {
+			assertTrue (Triangle.isIsoceles(1, 3,3));
+		}
+				
+		
+		
+		//probar con negativos
+		@Test
+		public void testNegativos () {
+			assertFalse (Triangle.isEquilateral(-1, -1, -1)); 
+		}
+		
+		//probar con ceros
+		@Test
+		public void testCeros () {
+			assertFalse (Triangle.isEquilateral(0, 0, 0)); 
+		}
+		
+		
+		
+		
+		
 
 
 }

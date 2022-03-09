@@ -12,4 +12,39 @@ public class Triangle{
 	
 	//Agregar las funciones para determinar el tipo de triángulo que es equilatero, escaleno o isosceles
 	
+	public static boolean isEquilateral (int a, int b, int c) {
+		if (isTriangle (a,b,c)){
+			if (a==b && b==c)
+				return true;
+			else
+				return false;
+		}
+		else
+			return false;
+		
+		
+	}
+	
+	public static boolean isEscalane (int a, int b, int c) {
+		if (isTriangle (a,b,c)){
+			if (a!=b && b!=c && a!=c)
+				return true;
+			else
+				return false;
+		}
+		else
+			return false;
+	}
+	
+	public static boolean isIsoceles (int a, int b, int c) {
+		if (isTriangle (a,b,c)){
+			if ((a==b && b!=c) || (b==c && a!=c) || (a==c && a!=b)) 
+				return true;
+			else
+				return false;
+		}
+		else
+			return false;
+	}
+	
 }
