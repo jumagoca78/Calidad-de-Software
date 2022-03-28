@@ -116,7 +116,7 @@ public class DemoTest {
 				
 		@Test
 		public void testIsosceles2 () {
-			assertTrue (Triangle.isIsoceles(3, 1,3));
+			assertFalse (Triangle.isIsoceles(3, 1,3));
 		}
 		
 		@Test
